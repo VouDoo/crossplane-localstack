@@ -1,0 +1,12 @@
+---
+apiVersion: ec2.aws.upbound.io/v1beta1
+kind: Instance
+metadata:
+  name: my-instance
+spec:
+  forProvider:
+    ami: ami-ff0fea8310f3
+    instanceType: t3.nano
+    region: us-west-1
+  providerConfigRef:
+    name: localstack
